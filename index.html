@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Emoji Chef</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/styles.css" />
+  </head>
+  <body>
+    <header>
+      <h1>
+        Emoji Chef
+      </h1>
+      <p>Seleziona 3 emoji e crea la tua ricetta!</p>
+      <div class="logo">👨🏽‍🍳</div>
+    </header>
+    <main>
+      <div class="container">
+        <div class="ingredients">
+          <div class="ingredient">🥩</div>
+          <div class="ingredient">🍅</div>
+          <div class="ingredient">🧀</div>
+          <div class="ingredient">🍆</div>
+          <div class="ingredient">🥦</div>
+          <div class="ingredient">🐟</div>
+          <div class="ingredient">🥑</div>
+          <div class="ingredient">🍗</div>
+          <div class="ingredient">🥕</div>
+          <div class="ingredient">🥬</div>
+          <div class="ingredient">🥚</div>
+          <div class="ingredient">🥔</div>
+        </div>
+
+        <div class="bowl">
+          <div class="bowl-slot">?</div>
+          <div class="bowl-slot">?</div>
+          <div class="bowl-slot">?</div>
+        </div>
+
+        <button id="cook-button" class="hidden">Crea ricetta!</button>
+      </div>
+    </main>
+
+    <!-- loading -->
+    <div class="loading hidden">
+      <img src="img/loader.gif" alt="loading" />
+      <p class="loading-message">Loading...</p>
+    </div>
+    <!-- end of loading -->
+    <!-- modal -->
+    <div class="modal hidden">
+      <div class="modal-box">
+        <div class="modal-close">
+          <img src="img/close-button.svg" alt="close" />
+        </div>
+        <div class="recipe-image">
+          <!--<img src="https://picsum.photos/300/200" alt="placeholder" />-->
+        </div>
+        <div class="recipe-content">
+          <h2>Title</h2>
+          <p>
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Non,
+            quisquam. Magnam beatae dolore corrupti similique harum, vel
+            praesentium itaque architecto quam. Voluptas dignissimos placeat
+            molestiae nostrum accusantium tenetur dicta? Quod, dolorem quasi?
+            Sunt soluta ad eum asperiores nemo, atque alias vel ea? Rem tenetur
+            fuga provident natus atque quas earum quam architecto ipsa ex sed
+            veniam deleniti aliquam exercitationem, hic nesciunt illum sapiente
+            assumenda! Odit asperiores pariatur soluta explicabo illo iste eius,
+            animi blanditiis minus vitae eveniet magni labore, perferendis
+            tenetur reiciendis, itaque facere dolorum. Aliquam perspiciatis iste
+            doloribus necessitatibus voluptate, eveniet at, nostrum saepe ab
+            modi quam rem eos?
+          </p>
+        </div>
+      </div>
+    </div>
+    <!-- end of modal -->
+
+    <script src="js/main.js"></script>
+  </body>
+</html>
